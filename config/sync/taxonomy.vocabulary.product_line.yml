@@ -1,0 +1,8 @@
+uuid: d9d763ba-c2d3-43a3-a6bf-5324e339f70d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Line'
+vid: product_line
+description: ''
+weight: 0

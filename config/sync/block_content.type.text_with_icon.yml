@@ -1,0 +1,8 @@
+uuid: 589c5f2b-327e-4d1f-af15-92ed6afba317
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_icon
+label: 'Text with Icon List'
+revision: 0
+description: ''

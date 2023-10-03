@@ -1,0 +1,10 @@
+uuid: 3e82c3b9-4946-4a64-aa21-2e8d8051487a
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_icon
+label: 'Text with Icon'
+icon_uuid: null
+icon_default: null
+description: 'Use this Paragraph Type when you want to display a Title w Short description underneath an Icon'
+behavior_plugins: {  }

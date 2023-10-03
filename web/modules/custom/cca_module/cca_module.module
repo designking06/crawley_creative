@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Base hook functions for cca_module.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function cca_module_cron() {
+  \Drupal::messenger()->addMessage(t("Hello from cron!"));
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function cca_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // \Drupal::messenger()->addMessage(t("form_id of this form is @id: ", ['@id' => $form_id]));
+  if ($form_id == 'node_article_edit_form') {
+
+  }
+}

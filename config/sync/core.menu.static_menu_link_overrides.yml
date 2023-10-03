@@ -1,0 +1,69 @@
+_core:
+  default_config_hash: CXhei_vpaZk-3f_Mj2cH0YmpK-ZpKHoSzVA3yZrDq0g
+definitions:
+  contact__site_page:
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  block__admin_display:
+    weight: -66
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__comment_type__collection:
+    weight: -64
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__contact_form__collection:
+    weight: -63
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__node_type__collection:
+    weight: -62
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  field_ui__display_mode:
+    weight: -61
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__media_type__collection:
+    weight: -60
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__menu__collection:
+    weight: -59
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__paragraphs_type__collection:
+    weight: -58
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__collection:
+    weight: -57
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__view__collection:
+    weight: -56
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true

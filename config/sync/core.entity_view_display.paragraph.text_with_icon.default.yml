@@ -1,0 +1,32 @@
+uuid: b37e4191-9b64-46b9-8720-cb618c5d18d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_icon.field_description_short
+    - field.field.paragraph.text_with_icon.field_icon
+    - paragraphs.paragraphs_type.text_with_icon
+  module:
+    - text
+id: paragraph.text_with_icon.default
+targetEntityType: paragraph
+bundle: text_with_icon
+mode: default
+content:
+  field_description_short:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icon:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

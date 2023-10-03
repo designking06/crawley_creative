@@ -1,0 +1,31 @@
+uuid: 81341ed6-f114-4fc7-b12d-5f1f979c4cee
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_with_icon
+    - field.storage.block_content.field_text_w_icon_list
+    - paragraphs.paragraphs_type.text_with_icon
+  module:
+    - entity_reference_revisions
+id: block_content.text_with_icon.field_text_w_icon_list
+field_name: field_text_w_icon_list
+entity_type: block_content
+bundle: text_with_icon
+label: 'Text w Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_with_icon: text_with_icon
+    negate: 0
+    target_bundles_drag_drop:
+      text_with_icon:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

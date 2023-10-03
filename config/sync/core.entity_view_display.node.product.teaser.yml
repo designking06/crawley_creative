@@ -1,0 +1,36 @@
+uuid: 52ee3ad9-03f6-47ec-965d-7722890c4789
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product.body
+    - field.field.node.product.field_media_image
+    - field.field.node.product.field_price
+    - field.field.node.product.field_product_line
+    - node.type.product
+  module:
+    - text
+    - user
+id: node.product.teaser
+targetEntityType: node
+bundle: product
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_media_image: true
+  field_price: true
+  field_product_line: true

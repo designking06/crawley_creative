@@ -1,0 +1,33 @@
+uuid: 2b3ec69f-c7d9-4f01-99e9-a30987f5f6de
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_with_icon
+    - field.field.block_content.text_with_icon.body
+    - field.field.block_content.text_with_icon.field_text_w_icon_list
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.text_with_icon.default
+targetEntityType: block_content
+bundle: text_with_icon
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text_w_icon_list:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

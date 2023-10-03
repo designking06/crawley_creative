@@ -1,0 +1,34 @@
+uuid: 0bc766d4-7d82-492f-99e9-da99b24d0c87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_icon.field_description_short
+    - field.field.paragraph.text_with_icon.field_icon
+    - paragraphs.paragraphs_type.text_with_icon
+  module:
+    - media_library
+    - text
+id: paragraph.text_with_icon.default
+targetEntityType: paragraph
+bundle: text_with_icon
+mode: default
+content:
+  field_description_short:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

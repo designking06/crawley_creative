@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ * Base hook functions for cca_module.
+ */
+
+function rsvplist_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Grab Content Types that are RSVP Enabled
+
+  // Alter the node edit form of those to add RSVP
+}

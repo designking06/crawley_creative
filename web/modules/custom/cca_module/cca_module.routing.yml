@@ -1,0 +1,15 @@
+cca_module.simplecontent:
+  path: '/mycontent'
+  defaults:
+    _controller: '\Drupal\cca_module\Controller\FirstController::simpleContent'
+    _title: 'Crawley Creative'
+  requirements:
+    _permission: 'access content'
+
+cca_module.variablecontent:
+  path: '/mycustompath'
+  defaults:
+    _controller: '\Drupal\cca_module\Controller\FirstController::variableContent'
+    _title: 'Crawley Creative!'
+  requirements:
+    _permission: 'access content'
