@@ -50,7 +50,6 @@ class RSVPForm extends FormBase {
       '#type' => 'hidden',
       '#value' => $nid,
     ];
-
     return $form;
   }
 
@@ -101,6 +100,9 @@ class RSVPForm extends FormBase {
       $query->execute();
 
       \Drupal::messenger()->addMessage( t('Thank you for your RSVP!'));
+      dump($form_state);
+      dump($form);
+      exit();
     }
     catch (\Exception $e) {
       \Drupal::messenger()->addError( t('Unable to register your RSVP due to database error.'));
