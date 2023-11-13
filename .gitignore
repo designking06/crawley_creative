@@ -18,12 +18,14 @@
 /vendor/
 
 # Ignore configuration files that may contain sensitive information.
+.idea/
+web/sites/default/files/php
 sites/*/settings*.php
 sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
 sites/*/files
-sites/default/files/php
+
 sites/*/private
 
 # Ignore multi-site test environment.
