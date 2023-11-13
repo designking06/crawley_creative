@@ -1,0 +1,3 @@
+services:
+  cca_phpunit.calc_fibos:
+    class: Drupal\cca_phpunit\FibonacciService

@@ -22,6 +22,7 @@
         "drupal/core-recommended": "^10.0",
         "drupal/gin": "^3.0@RC",
         "drupal/paragraphs": "^1.16",
+        "drupal/quick_node_clone": "^1.16",
         "drupal/token_filter": "^2.0",
         "drush/drush": "^11"
     },
@@ -96,5 +97,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "^10.1"
     }
 }
