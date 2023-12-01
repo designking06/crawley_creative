@@ -1,0 +1,14 @@
+api_connect.settings:
+  type: mapping
+  label: API Connection Keys
+  mapping:
+    api_key:
+      type:string
+    bearer_token:
+      type:string
+    secret_key:
+      type:string
+    access_token:
+      type:string
+    access_token_s:
+      type:string

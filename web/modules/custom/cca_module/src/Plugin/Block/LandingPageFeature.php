@@ -33,7 +33,7 @@ class LandingPageFeature extends BlockBase implements BlockPluginInterface {
         //end build.
     }
 
-    function nbl_blocks_views_pre_view(&$view, &$display_id, &$args)
+    function cca_module_views_pre_view(&$view, &$display_id, &$args)
     {
 
         if ($view->name == 'event_list' && $display_id == 'block_8') {

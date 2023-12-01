@@ -1,0 +1,5 @@
+name: API Connect
+type: module
+core_version_requirement: ^9.5 || ^10
+description: 'Provides methods for connecting to Third Part API'
+version: 1.0

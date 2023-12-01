@@ -1,0 +1,4 @@
+services:
+  client_admin.current_group:
+    class: Drupal\client_admin\CurrentGroup
+    arguments: [ '@current_route_match', '@entity_type.manager' ]

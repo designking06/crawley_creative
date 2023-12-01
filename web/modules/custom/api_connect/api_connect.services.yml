@@ -1,0 +1,9 @@
+services:
+  api_connect.interact:
+    class: Drupal\api_connect\services\InteractServices
+    arguments: ['%api_connect.key%','%api_connect.url%']
+  api_connect.twitter_interact:
+    class: Drupal\api_connect\services\TwitterInteractServices
+parameters:
+  api_connect.key: ""
+  api_connect.url: ""
