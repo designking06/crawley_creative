@@ -1,0 +1,5 @@
+name: Example TV Provider
+type: module
+description: 'Provides block and functionality for channels.'
+package: Custom
+core_version_requirement: ^9

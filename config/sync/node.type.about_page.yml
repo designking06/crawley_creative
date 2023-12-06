@@ -1,0 +1,17 @@
+uuid: a161d33e-e6b6-4206-a995-150a8bf0a511
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'About Page'
+type: about_page
+description: 'Will create a new about page with url alias /about/'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

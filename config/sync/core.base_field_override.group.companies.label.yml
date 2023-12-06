@@ -1,0 +1,18 @@
+uuid: 22791aef-e3e7-4b47-8eb6-6a664dfbf8ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.companies
+id: group.companies.label
+field_name: label
+entity_type: group
+bundle: companies
+label: 'Company Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

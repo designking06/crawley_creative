@@ -1,0 +1,18 @@
+uuid: a7aa7d8c-444b-4073-88f8-44b0a6f90f6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Client
+type: client
+description: 'A person who a Company services'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

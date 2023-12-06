@@ -1,0 +1,33 @@
+uuid: b2e80e02-a836-4f2d-8171-65eac99641ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.companies
+id: companies-leader
+label: Leader
+weight: 103
+admin: false
+scope: individual
+global_role: null
+group_type: companies
+permissions:
+  - 'access content overview'
+  - 'access group_node overview'
+  - 'administer members'
+  - 'create group_node:admin_page entity'
+  - 'create group_node:admin_page relationship'
+  - 'delete any group_node:admin_page entity'
+  - 'delete own group_node:admin_page entity'
+  - 'edit group'
+  - 'revert group revisions'
+  - 'update any group_node:admin_page entity'
+  - 'update own group_membership relationship'
+  - 'update own group_node:admin_page entity'
+  - 'view group'
+  - 'view group_membership relationship'
+  - 'view group_node:admin_page entity'
+  - 'view group_node:admin_page relationship'
+  - 'view own unpublished group'
+  - 'view own unpublished group_node:admin_page entity'
+  - 'view unpublished group_node:admin_page entity'

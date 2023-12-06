@@ -31,7 +31,7 @@ class TweetsBlock extends BlockBase {
   }
 
   public function grabTweets() {
-    $interact = \Drupal::service('api_connect.twitter_interact');
-    return $interact->getData();
+    // $interact = \Drupal::service('api_connect.twitter_interact');
+    // return $interact->getData();
   }
 }

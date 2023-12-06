@@ -1,0 +1,23 @@
+uuid: 16db392c-172f-4256-9f3a-82ad27411812
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.admin_page
+  module:
+    - text
+id: node.admin_page.body
+field_name: body
+entity_type: node
+bundle: admin_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

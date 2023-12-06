@@ -1,0 +1,23 @@
+uuid: 3500b19b-7e8f-4420-b696-499869e6fa5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.ccadmin_pages-group_membership.group_roles
+    - group.relationship_type.ccadmin_pages-group_membership
+id: group_relationship.ccadmin_pages-group_membership.default
+targetEntityType: group_relationship
+bundle: ccadmin_pages-group_membership
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  uid: true

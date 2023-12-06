@@ -1,0 +1,18 @@
+uuid: 117c6e28-715e-4ac0-9bf4-1f5d49e3004f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.ccadmin_pages
+id: group.ccadmin_pages.label
+field_name: label
+entity_type: group
+bundle: ccadmin_pages
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

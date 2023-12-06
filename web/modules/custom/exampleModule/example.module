@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Module file example lineup.
+ *
+ */
+
+
+/**
+ * Implements hook_theme().
+ *
+ * @param $existing
+ *   Existing param.
+ * @param $type
+ *   Type param.
+ * @param $theme
+ *   Theme param.
+ * @param $path
+ *   Path param.
+ *
+ * @return \string[][][]
+ */
+function example_lineup_theme($existing, $type, $theme, $path) {
+    return [
+        'block__lineupblock' => [
+            'variables' => [
+                'table' => NULL,
+                'filters' => NULL,
+            ],
+        ]
+    ];
+}

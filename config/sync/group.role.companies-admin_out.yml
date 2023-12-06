@@ -1,0 +1,15 @@
+uuid: 56fd4499-ff0a-41f9-a0bb-6af8ff45f731
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.companies
+    - user.role.administrator
+id: companies-admin_out
+label: Administrator
+weight: 101
+admin: true
+scope: outsider
+global_role: administrator
+group_type: companies
+permissions: {  }

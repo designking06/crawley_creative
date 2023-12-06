@@ -1,0 +1,38 @@
+uuid: 701e48c2-373a-4c03-93bf-92ff6c1ccb7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.companies-group_membership.group_roles
+    - group.relationship_type.companies-group_membership
+  module:
+    - path
+id: group_relationship.companies-group_membership.default
+targetEntityType: group_relationship
+bundle: companies-group_membership
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  group_roles:
+    type: options_buttons
+    weight: 31
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true
