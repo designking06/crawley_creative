@@ -9,6 +9,7 @@ module:
   breakpoint: 0
   cca_module: 0
   ckeditor5: 0
+  client_admin: 0
   comment: 0
   config: 0
   contact: 0
@@ -17,11 +18,15 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  entity: 0
   entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  flexible_permissions: 0
+  gnode: 0
+  group: 0
   help: 0
   history: 0
   image: 0
@@ -34,6 +39,7 @@ module:
   menu_ui: 0
   mysql: 0
   node: 0
+  nodeaccess: 0
   options: 0
   page_cache: 0
   path: 0
@@ -50,6 +56,9 @@ module:
   tour: 0
   update: 0
   user: 0
+  variationcache: 0
+  views_slideshow: 0
+  views_slideshow_cycle: 0
   views_ui: 0
   views: 10
   paragraphs: 11

@@ -1,0 +1,20 @@
+example-lineup:
+  version: 1.x
+  js:
+    js/example_lineup.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery.once
+    - example_lineup/example-datatable
+
+example-datatable:
+  version: 1.X
+  header: true
+  css:
+    theme:
+      https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css: { type: external, minified: true }
+  js:
+    https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js: { type: external, minified: true }
+  dependencies:
+    - core/drupal
+    - core/jquery.once

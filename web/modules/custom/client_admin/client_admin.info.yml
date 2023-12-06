@@ -1,0 +1,4 @@
+name: CCAdmin
+type: module
+core_version_requirement: ^10
+package: CCAdmin

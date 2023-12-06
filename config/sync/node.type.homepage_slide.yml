@@ -1,0 +1,17 @@
+uuid: 1a33464c-708c-4f24-96c3-9243fce387f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Homepage Slide'
+type: homepage_slide
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

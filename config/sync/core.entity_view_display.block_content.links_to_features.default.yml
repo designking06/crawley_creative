@@ -1,0 +1,33 @@
+uuid: e2c82380-3159-48c9-8c3b-604c37017053
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.links_to_features
+    - field.field.block_content.links_to_features.body
+    - field.field.block_content.links_to_features.field_links
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.links_to_features.default
+targetEntityType: block_content
+bundle: links_to_features
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_links:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

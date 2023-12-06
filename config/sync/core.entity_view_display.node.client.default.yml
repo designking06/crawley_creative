@@ -1,0 +1,37 @@
+uuid: f11ae146-e632-41b8-8afd-103d3d3f7898
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.client.body
+    - field.field.node.client.field_company
+    - node.type.client
+  module:
+    - text
+    - user
+id: node.client.default
+targetEntityType: node
+bundle: client
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_company:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

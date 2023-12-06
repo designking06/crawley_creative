@@ -1,0 +1,11 @@
+uuid: 767727cc-aabf-41d0-9f27-cf1c120b9ee5
+langcode: en
+status: true
+dependencies: {  }
+id: companies
+label: Companies
+description: ''
+new_revision: true
+creator_membership: true
+creator_wizard: false
+creator_roles: {  }

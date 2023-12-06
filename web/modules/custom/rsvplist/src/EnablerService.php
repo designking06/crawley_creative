@@ -10,7 +10,7 @@ use Drupal\Core\Database\Connection;
 use Drupal\node\Entity\Node;
 
 class EnablerService {
-  protected $database_connection;
+  protected Connection $database_connection;
 
   public function __construct(Connection $connection) {
     $this->database_connection = $connection;
@@ -22,12 +22,12 @@ class EnablerService {
    * @param Node $node
    * @return bool
    */
-  public function isEnabled(Node &$node) {
+  public function isRvspEnabled(Node &$node) {
     if ($node->isNew()) {
       return FALSE;
     }
     try {
-      // Grab node ID's of node with enabled rsvp from db
+      // Grab node ID's of nodes with enabled rsvp from db
       $select = $this->database_connection->select('rsvplist_enabled', 're');
       $select->fields('re', ['nid']);
       $select->condition('nid', $node->id());
@@ -36,7 +36,7 @@ class EnablerService {
       return !(empty($results->fetchCol()));
     }
     catch (\Exception $e) {
-      \Drupal::messenger()->addError(t('RSVP Enabler Error: Could not access database'));
+      \Drupal::messenger()->addError(t('RSVP Enabler Error: RSVP not enabled on Node #'. $node->id()));
 
       return NULL;
     }
@@ -58,7 +58,7 @@ class EnablerService {
     }
     catch (\Exception $e) {
       \Drupal::messenger()->addError(
-        t('RSVP Enabler Error: Unable to enable RSVP on content. Please try again.')
+        t('RSVP Enabler Error: Unable to enable RSVP on node #' . $node->id() . '. Please try again.')
       );
     }
   }
@@ -67,7 +67,7 @@ class EnablerService {
    * @param Node $node
    * @throw Exception
    */
-  public function deleteEnabled(Node $node) {
+  public function deleteRsvpEnabledSetting(Node $node) {
     try {
       $delete = $this->database_connection->delete('rsvplist_enabled');
       $delete->condition('nid', $node->id());
@@ -75,7 +75,7 @@ class EnablerService {
     }
     catch (\Exception $e) {
       \Drupal::messenger()->addError(
-        t('RSVP Enabler Error: Unable to disable RSVP on content. Please try again.')
+        t('RSVP Enabler Error: Unable to disable RSVP on node #' . $node->id() . '. Please try again.')
       );
     }
   }

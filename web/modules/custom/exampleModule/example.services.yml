@@ -1,0 +1,10 @@
+services:
+  example_lineup.channels:
+    class: Drupal\example_lineup\Services\ChannelsBuilder
+    arguments: [
+      '@entity_type.manager',
+      '@http_client',
+      '@form_builder',
+      '@example_location.location',
+      '@request_stack'
+    ]

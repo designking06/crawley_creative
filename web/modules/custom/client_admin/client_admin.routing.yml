@@ -1,0 +1,8 @@
+client_admin.home:
+  path: '/ccadmin/homepage'
+  defaults:
+    _title: 'CCA Client Admin'
+    _controller: '\Drupal\client_admin\Controller\HomePageController::content'
+    _description: 'Used for Viewing created client info and linking to Create, Delete and Update pages.'
+  requirements:
+    _access: 'TRUE'

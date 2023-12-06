@@ -1,0 +1,15 @@
+uuid: f97b9e60-2358-4022-8bff-97e16343bd6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.ccadmin_pages
+    - user.role.administrator
+id: ccadmin_pages-admin_out
+label: Administrator
+weight: 101
+admin: true
+scope: outsider
+global_role: administrator
+group_type: ccadmin_pages
+permissions: {  }

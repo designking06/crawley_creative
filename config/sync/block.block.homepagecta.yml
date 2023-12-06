@@ -1,0 +1,30 @@
+uuid: ebc98592-ccc5-40de-82c9-e7db12785e4c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:729786ca-5f4b-4914-8bef-6251b152245a'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: homepagecta
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:729786ca-5f4b-4914-8bef-6251b152245a'
+settings:
+  id: 'block_content:729786ca-5f4b-4914-8bef-6251b152245a'
+  label: 'Homepage CTA'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

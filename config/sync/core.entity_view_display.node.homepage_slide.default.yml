@@ -1,0 +1,55 @@
+uuid: 12b4a6cd-b83e-47bf-bb40-cd6563cb1b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_slide.body
+    - field.field.node.homepage_slide.field_image
+    - field.field.node.homepage_slide.field_link
+    - node.type.homepage_slide
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.homepage_slide.default
+targetEntityType: node
+bundle: homepage_slide
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

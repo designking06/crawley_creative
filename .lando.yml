@@ -1,7 +1,13 @@
 name: crawley-creative
 recipe: drupal10
 config:
-  webroot: /web/
+  webroot: web
+  xdebug: 'develop,debug'
 services:
   databaseadmin:
     type: phpmyadmin
+  appserver: # appserver is a default lando service name
+    overrides:
+      environment:
+        # support debugging Drush with XDEBUG.
+        PHP_IDE_CONFIG: "serverName=appserver"

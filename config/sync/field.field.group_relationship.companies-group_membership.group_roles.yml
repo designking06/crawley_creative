@@ -1,0 +1,22 @@
+uuid: 48e7a27f-e3d9-47a9-8b6c-df473b604ad7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_relationship.group_roles
+    - group.relationship_type.companies-group_membership
+id: group_relationship.companies-group_membership.group_roles
+field_name: group_roles
+entity_type: group_relationship
+bundle: companies-group_membership
+label: Roles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'group_type:group_role'
+  handler_settings:
+    group_type_id: companies
+field_type: entity_reference

@@ -1,0 +1,12 @@
+uuid: 98f85ca4-3db2-4330-ba25-02705ae27a80
+langcode: en
+status: true
+dependencies: {  }
+id: ccadmin_pages
+label: 'CCAdmin Pages'
+description: ''
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - ccadmin_pages-admin

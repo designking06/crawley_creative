@@ -1,0 +1,232 @@
+_core:
+  default_config_hash: ev_QLQNwc0-1EGokxDRzrPpUi1kLXjeBRd5vhwpB6h0
+allowed_grant_operations:
+  grant_view: true
+  grant_update: true
+  grant_delete: true
+bundles_roles_grants:
+  admin_page:
+    authenticated:
+      grant_view: 1
+      grant_update: 0
+      grant_delete: 0
+    administrator:
+      grant_view: 1
+      grant_update: 1
+      grant_delete: 0
+    anonymous:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    content_editor:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    author:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+  article:
+    anonymous:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    authenticated:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    content_editor:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    administrator:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    author:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+  client:
+    anonymous:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    authenticated:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    content_editor:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    administrator:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    author:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+  landing_page:
+    anonymous:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    authenticated:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    content_editor:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    administrator:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    author:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+  page:
+    anonymous:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    authenticated:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    content_editor:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    administrator:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    author:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+  product:
+    anonymous:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    authenticated:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    content_editor:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    administrator:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    author:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+  service:
+    anonymous:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    authenticated:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    content_editor:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    administrator:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    author:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+  homepage_slide:
+    anonymous:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    authenticated:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    content_editor:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    administrator:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    author:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+  about_page:
+    anonymous:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    authenticated:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    content_editor:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    administrator:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+    author:
+      grant_view: 0
+      grant_update: 0
+      grant_delete: 0
+grants_tab_availability:
+  admin_page: true
+  article: false
+  client: false
+  landing_page: false
+  page: false
+  product: false
+  service: false
+  homepage_slide: false
+  about_page: false
+map_rid_gid:
+  anonymous: 0
+  authenticated: 1
+  content_editor: 2
+  administrator: 3
+roles_settings:
+  anonymous:
+    display_name: 'Anonymous user'
+    name: 'Anonymous user'
+    weight: 0
+    selected: true
+  authenticated:
+    display_name: 'Authenticated user'
+    name: 'Authenticated user'
+    weight: 0
+    selected: true
+  content_editor:
+    display_name: 'Content editor'
+    name: 'Content editor'
+    weight: 0
+    selected: true
+  administrator:
+    display_name: Administrator
+    name: Administrator
+    weight: 0
+    selected: true
