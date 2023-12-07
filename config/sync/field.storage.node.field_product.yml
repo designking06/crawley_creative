@@ -1,15 +1,16 @@
-uuid: b3316860-8a63-40f7-9652-e4ba265f2c17
+uuid: bc857cfa-06ba-4f04-9475-8d80425a5534
 langcode: en
 status: true
 dependencies:
   module:
+    - commerce_product
     - node
-id: node.field_product_reference
-field_name: field_product_reference
+id: node.field_product
+field_name: field_product
 entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: commerce_product
 module: core
 locked: false
 cardinality: -1

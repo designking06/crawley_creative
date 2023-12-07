@@ -1,0 +1,10 @@
+uuid: 7b01c578-757d-4fca-aaf2-a5091470b691
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.product_display
+label: 'Product Display'
+targetEntityType: commerce_product
+cache: true

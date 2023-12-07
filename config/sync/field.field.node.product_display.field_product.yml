@@ -1,13 +1,13 @@
-uuid: d2419f36-0b8f-488a-90a6-f4aeae4c5329
+uuid: b04c67dc-9116-4857-9127-f7641ec7b756
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_product_reference
-    - node.type.product
+    - commerce_product.commerce_product_type.default
+    - field.storage.node.field_product
     - node.type.product_display
-id: node.product_display.field_product_reference
-field_name: field_product_reference
+id: node.product_display.field_product
+field_name: field_product
 entity_type: node
 bundle: product_display
 label: 'Product Reference'
@@ -17,10 +17,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:commerce_product'
   handler_settings:
     target_bundles:
-      product: product
+      default: default
     sort:
       field: _none
       direction: ASC

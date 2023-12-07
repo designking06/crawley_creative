@@ -21,3 +21,18 @@ function cca_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
 
   }
 }
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function cca_module_entity_extra_field_info(){
+  $extra = [];
+
+  $extra['commerce_product']['product']['display']['variation_price'] = [
+    'label' => t('Variation price'),
+    'visible' => FALSE,
+    'weight' => 0,
+  ];
+
+  return $extra;
+}

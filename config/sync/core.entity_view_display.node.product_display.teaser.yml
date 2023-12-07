@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.product_display.body
-    - field.field.node.product_display.field_product_reference
+    - field.field.node.product_display.field_product
     - node.type.product_display
   module:
     - text
@@ -29,4 +29,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_product_reference: true
+  field_product: true

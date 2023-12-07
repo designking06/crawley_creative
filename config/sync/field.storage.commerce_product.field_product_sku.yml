@@ -1,0 +1,21 @@
+uuid: f2f68c26-1e29-485f-b0cc-5b073e22becd
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_product_sku
+field_name: field_product_sku
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 100
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

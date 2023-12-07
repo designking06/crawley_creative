@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.product_display.body
-    - field.field.node.product_display.field_product_reference
+    - field.field.node.product_display.field_product
     - node.type.product_display
   module:
     - text
@@ -21,11 +21,12 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_product_reference:
-    type: entity_reference_label
-    label: above
+  field_product:
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      link: true
+      view_mode: product_display
+      link: false
     third_party_settings: {  }
     weight: 102
     region: content

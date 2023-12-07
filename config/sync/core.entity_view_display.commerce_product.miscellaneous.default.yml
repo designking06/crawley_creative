@@ -1,0 +1,48 @@
+uuid: 6b28b1a2-36ee-405c-88d9-93a07e09cbd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.miscellaneous
+    - field.field.commerce_product.miscellaneous.body
+  module:
+    - commerce_product
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: commerce_product.miscellaneous.default
+targetEntityType: commerce_product
+bundle: miscellaneous
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

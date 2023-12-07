@@ -1,18 +1,18 @@
-uuid: e7c31c4a-fbb5-44c5-b6e9-3fd487f75bca
+uuid: b3799216-945f-4243-9d4c-56d7bebacb6b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.product_display.body
-    - field.field.node.product_display.field_product
-    - node.type.product_display
+    - commerce_product.commerce_product_type.miscellaneous
+    - field.field.commerce_product.miscellaneous.body
   module:
-    - inline_entity_form
+    - commerce
+    - commerce_product
     - path
     - text
-id: node.product_display.default
-targetEntityType: node
-bundle: product_display
+id: commerce_product.miscellaneous.default
+targetEntityType: commerce_product
+bundle: miscellaneous
 mode: default
 content:
   body:
@@ -27,58 +27,36 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_product:
-    type: inline_entity_form_complex
-    weight: 2
-    region: content
-    settings:
-      form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      allow_duplicate: false
-      collapsible: false
-      collapsed: false
-      revision: false
-      removed_reference: keep
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 5
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 90
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 6
+  stores:
+    type: commerce_entity_select
+    weight: -10
     region: content
     settings:
-      display_label: true
+      hide_single_entity: true
+      autocomplete_threshold: 7
+      autocomplete_size: 60
+      autocomplete_placeholder: ''
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -86,12 +64,18 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  variations:
+    type: commerce_product_single_variation
+    weight: 2
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

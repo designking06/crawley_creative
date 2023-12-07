@@ -1,0 +1,10 @@
+uuid: 8da89b5b-d007-46a3-972c-4ed437164ed5
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.cart
+label: Cart
+targetEntityType: commerce_product
+cache: true

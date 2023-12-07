@@ -1,15 +1,13 @@
-uuid: c40bbb41-4b9a-4099-a030-07bfc1744f4a
+uuid: f7844f86-cd1c-4ae0-830f-b3920204ca1b
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: hwJoqnxqBS0fPM3s6FccZ2bWaq9LneRYLzFk-wlJWjs
-id: default
-label: Default
+id: miscellaneous
+label: Miscellaneous
 traits: {  }
 locked: false
 description: ''
-variationType: default
+variationType: null
 variationTypes:
   - default
 multipleVariations: false

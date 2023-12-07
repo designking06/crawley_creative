@@ -110,27 +110,6 @@ bundles_roles_grants:
       grant_view: 0
       grant_update: 0
       grant_delete: 0
-  product:
-    anonymous:
-      grant_view: 0
-      grant_update: 0
-      grant_delete: 0
-    authenticated:
-      grant_view: 0
-      grant_update: 0
-      grant_delete: 0
-    content_editor:
-      grant_view: 0
-      grant_update: 0
-      grant_delete: 0
-    administrator:
-      grant_view: 0
-      grant_update: 0
-      grant_delete: 0
-    author:
-      grant_view: 0
-      grant_update: 0
-      grant_delete: 0
   service:
     anonymous:
       grant_view: 0
@@ -221,7 +200,6 @@ grants_tab_availability:
   client: false
   landing_page: false
   page: false
-  product: false
   service: false
   homepage_slide: false
   about_page: false

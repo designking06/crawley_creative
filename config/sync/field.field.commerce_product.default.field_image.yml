@@ -1,15 +1,15 @@
-uuid: 2c5086e9-0b4d-4c3a-b5c6-10088170e1db
+uuid: 47799528-4c55-47a4-a09e-9bb76359e250
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_media_image
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_image
     - media.type.image
-    - node.type.product
-id: node.product.field_media_image
-field_name: field_media_image
-entity_type: node
-bundle: product
+id: commerce_product.default.field_image
+field_name: field_image
+entity_type: commerce_product
+bundle: default
 label: Image
 description: ''
 required: false
@@ -24,6 +24,6 @@ settings:
     sort:
       field: _none
       direction: ASC
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

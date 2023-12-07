@@ -1,16 +1,16 @@
-uuid: 58250ccf-2201-490d-8c09-aa6d10857a34
+uuid: 36c85dac-f2dc-4000-996f-dc959dd00a3b
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-    - taxonomy
-id: node.field_product_line
-field_name: field_product_line
-entity_type: node
+    - commerce_product
+    - media
+id: commerce_product.field_image
+field_name: field_image
+entity_type: commerce_product
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: media
 module: core
 locked: false
 cardinality: 1
