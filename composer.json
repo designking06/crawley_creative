@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/commerce": "^2.36",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
@@ -26,6 +27,7 @@
         "drupal/paragraphs": "^1.16",
         "drupal/pathauto": "^1.12",
         "drupal/quick_node_clone": "^1.16",
+        "drupal/rules": "^3.0@alpha",
         "drupal/token_filter": "^2.0",
         "drupal/views_slideshow": "^5.0",
         "drush/drush": "^11",

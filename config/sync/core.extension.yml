@@ -1,6 +1,7 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  address: 0
   admin_toolbar: 0
   automated_cron: 0
   big_pipe: 0
@@ -11,6 +12,18 @@ module:
   ckeditor5: 0
   client_admin: 0
   comment: 0
+  commerce: 0
+  commerce_cart: 0
+  commerce_checkout: 0
+  commerce_log: 0
+  commerce_number_pattern: 0
+  commerce_order: 0
+  commerce_payment: 0
+  commerce_price: 0
+  commerce_product: 0
+  commerce_promotion: 0
+  commerce_store: 0
+  commerce_tax: 0
   config: 0
   contact: 0
   contextual: 0
@@ -30,6 +43,7 @@ module:
   help: 0
   history: 0
   image: 0
+  inline_entity_form: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
@@ -44,9 +58,12 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  profile: 0
   rsvplist: 0
+  rules: 0
   search: 0
   shortcut: 0
+  state_machine: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -54,6 +71,7 @@ module:
   token_filter: 0
   toolbar: 0
   tour: 0
+  typed_data: 0
   update: 0
   user: 0
   variationcache: 0

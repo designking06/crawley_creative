@@ -6,12 +6,13 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:'
 name: 'About Page'
 type: about_page
 description: 'Will create a new about page with url alias /about/'
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

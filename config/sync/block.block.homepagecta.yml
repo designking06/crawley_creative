@@ -12,7 +12,7 @@ dependencies:
 id: homepagecta
 theme: olivero
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: 'block_content:729786ca-5f4b-4914-8bef-6251b152245a'
 settings:
