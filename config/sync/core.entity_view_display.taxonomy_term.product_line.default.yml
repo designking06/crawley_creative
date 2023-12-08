@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.product_line.field_image
     - taxonomy.vocabulary.product_line
   module:
     - text
@@ -15,6 +16,15 @@ content:
     type: text_default
     label: hidden
     settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: token
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content

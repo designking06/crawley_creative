@@ -3,14 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.restricted_html
+    - filter.format.basic_html
+    - node.type.about_page
   module:
     - comment
     - commerce_checkout
+    - commerce_order
+    - commerce_payment
     - commerce_product
+    - commerce_promotion
+    - commerce_shipping
+    - commerce_store
     - contact
     - filter
     - media
+    - node
     - search
     - system
 _core:
@@ -23,8 +30,26 @@ permissions:
   - 'access checkout'
   - 'access comments'
   - 'access content'
+  - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
+  - 'post comments'
   - 'search content'
-  - 'use text format restricted_html'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'view any commerce_payment_method'
   - 'view commerce_product'
+  - 'view commerce_product_attribute'
+  - 'view commerce_promotion'
+  - 'view commerce_shipping_method'
+  - 'view commerce_store'
+  - 'view default commerce_product'
   - 'view media'
+  - 'view miscellaneous commerce_product'
+  - 'view online commerce_store'
+  - 'view own commerce_order'
+  - 'view own profile'
+  - 'view own unpublished profile'
+  - 'view rsvplist'
+  - 'view the administration theme'

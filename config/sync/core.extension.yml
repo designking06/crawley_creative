@@ -8,21 +8,23 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
-  cca_module: 0
   ckeditor5: 0
-  client_admin: 0
   comment: 0
   commerce: 0
+  commerce_add_to_cart_confirmation: 0
   commerce_cart: 0
   commerce_checkout: 0
   commerce_log: 0
   commerce_number_pattern: 0
   commerce_order: 0
   commerce_payment: 0
+  commerce_paypal: 0
   commerce_price: 0
   commerce_product: 0
   commerce_promotion: 0
+  commerce_shipping: 0
   commerce_store: 0
+  commerce_stripe: 0
   commerce_tax: 0
   config: 0
   contact: 0
@@ -39,8 +41,6 @@ module:
   file: 0
   filter: 0
   flexible_permissions: 0
-  gnode: 0
-  group: 0
   help: 0
   history: 0
   image: 0
@@ -59,8 +59,8 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  physical: 0
   profile: 0
-  rsvplist: 0
   rules: 0
   search: 0
   shortcut: 0

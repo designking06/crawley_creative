@@ -1,0 +1,15 @@
+uuid: c4448031-9eb7-4640-9aaf-a87ee064d31f
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+  enforced:
+    module:
+      - commerce_add_to_cart_confirmation
+_core:
+  default_config_hash: jCc76C1P679OLRBIaS5dphE1GZh6VMgV7Yp3B35fH_E
+id: commerce_product_variation.add_to_cart_confirmation
+label: 'Add to cart confirmation'
+targetEntityType: commerce_product_variation
+cache: true

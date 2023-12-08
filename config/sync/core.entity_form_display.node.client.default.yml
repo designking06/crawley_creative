@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.client.body
-    - field.field.node.client.field_company
     - node.type.client
   module:
     - path
@@ -29,16 +28,6 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_company:
-    type: entity_reference_autocomplete
-    weight: 122
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

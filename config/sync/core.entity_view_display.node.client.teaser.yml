@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.client.body
-    - field.field.node.client.field_company
     - node.type.client
   module:
     - text
@@ -28,5 +27,4 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden:
-  field_company: true
+hidden: {  }

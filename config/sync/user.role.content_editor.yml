@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.restricted_html
     - node.type.article
     - node.type.page
     - taxonomy.vocabulary.tags
@@ -10,8 +11,10 @@ dependencies:
     - comment
     - contextual
     - file
+    - filter
     - node
     - path
+    - profile
     - system
     - taxonomy
     - toolbar
@@ -43,6 +46,8 @@ permissions:
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'use text format restricted_html'
   - 'view all revisions'
+  - 'view any profile'
   - 'view own unpublished content'
   - 'view the administration theme'
